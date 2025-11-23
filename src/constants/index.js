@@ -4,25 +4,14 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +21,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,51 +35,35 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
+    description: "Building end-to-end web applications with modern technologies"
   },
   {
-    title: "React Native Developer",
+    title: "Web Scraping Specialist",
     icon: mobile,
+    description: "Extracting and analyzing data from websites and landing pages"
   },
   {
-    title: "Backend Developer",
+    title: "WordPress Developer",
     icon: backend,
+    description: "Creating custom websites and CMS solutions with WordPress"
   },
   {
-    title: "Content Creator",
+    title: "Python Developer",
     icon: creator,
+    description: "Developing scripts, automation, and backend systems with Python"
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -97,168 +74,246 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "HTML 5",
+    icon: html,
   },
   {
-    name: "git",
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Scraping Specialist & Full Stack Developer",
+    company_name: "Blue Ocean Production",
+    icon: "💼",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed web scraping solutions to extract data from landing pages and service sections",
+      "Built full-stack applications using Next.js, React, and modern JavaScript frameworks",
+      "Implemented server-side functionality using PHP and Node.js for backend operations",
+      "Designed and managed SQL databases, writing efficient queries and ensuring data integrity",
+      "Created automated data collection processes and developed APIs for data integration",
     ],
+    technologies: ["Python", "Next.js", "PHP", "SQL", "JavaScript", "Web Scraping"]
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Web Developer Intern",
+    company_name: "IT ADVISOR",
+    icon: "💻",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed company websites using WordPress CMS with custom PHP functionality",
+      "Created and optimized SQL databases for website content management",
+      "Implemented front-end features using modern web technologies (HTML5, CSS3, JavaScript)",
+      "Assisted in website maintenance, performance optimization, and troubleshooting",
+      "Collaborated with team members on client projects and requirements analysis",
     ],
+    technologies: ["WordPress", "PHP", "SQL", "HTML5", "CSS3", "JavaScript"]
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Arabic Language Teacher",
+    company_name: "Floraison Kentira",
+    icon: "📚",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2021 - 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Taught Arabic language to children in kindergarten and elementary sections",
+      "Developed educational methods and teaching materials for young learners",
+      "Managed classroom activities and organized educational programs",
+      "Enhanced communication and teaching skills through practical experience",
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    technologies: ["Teaching", "Communication", "Curriculum Development"]
   },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Abdellah demonstrated exceptional problem-solving skills in our web scraping project. His attention to detail and technical expertise delivered exactly what we needed.",
+    name: "Blue Ocean Team",
+    designation: "Project Manager",
+    company: "Blue Ocean Production",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "During his internship, Abdellah showed great initiative and quickly adapted to our development workflow. His WordPress contributions were valuable to our projects.",
+    name: "IT ADVISOR Team",
+    designation: "Development Lead",
+    company: "IT ADVISOR",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Abdellah's dedication to learning new technologies and his passion for web development make him a promising talent in the field.",
+    name: "Academic Advisor",
+    designation: "Instructor",
+    company: "Bachelor Program",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    id: 1,
+    name: "Web Scraping Automation System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Advanced web scraping system that extracts and analyzes data from multiple landing pages and service sections, providing valuable business intelligence and competitive insights.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Web Scraping",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Data Analysis",
         color: "pink-text-gradient",
       },
+      {
+        name: "Automation",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
     source_code_link: "https://github.com/",
+    live_demo_link: "#",
+    category: "scraping",
+    featured: true,
   },
   {
-    name: "Job IT",
+    id: 2,
+    name: "WordPress Business Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Professional company website built with WordPress CMS, featuring custom PHP functionality, responsive design, and optimized SQL database for content management.",
     tags: [
       {
-        name: "react",
+        name: "WordPress",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "PHP",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "SQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "JavaScript",
+        color: "yellow-text-gradient",
       },
     ],
-    image: jobit,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
     source_code_link: "https://github.com/",
+    live_demo_link: "#",
+    category: "web",
+    featured: false,
   },
   {
-    name: "Trip Guide",
+    id: 3,
+    name: "Full Stack Web Application",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Modern full-stack application built with Next.js and React, featuring responsive UI, backend API integration, and real-time data processing capabilities.",
     tags: [
       {
-        name: "nextjs",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "React",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     source_code_link: "https://github.com/",
+    live_demo_link: "#",
+    category: "fullstack",
+    featured: true,
+  },
+  {
+    id: 4,
+    name: "Flutter Mobile Application",
+    description:
+      "Cross-platform mobile application developed with Flutter, providing seamless user experience across both iOS and Android platforms with modern UI design.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dart",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "Mobile",
+        color: "green-text-gradient",
+      },
+      {
+        name: "UI/UX",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
+    source_code_link: "https://github.com/",
+    live_demo_link: "#",
+    category: "mobile",
+    featured: false,
+  },
+  {
+    id: 5,
+    name: "IoT Network Security System",
+    description:
+      "IoT security solution implementing network protection protocols and monitoring systems for connected devices, ensuring data integrity and system security.",
+    tags: [
+      {
+        name: "IoT",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Network Security",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Linux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop",
+    source_code_link: "https://github.com/",
+    live_demo_link: "#",
+    category: "iot",
+    featured: false,
   },
 ];
 
